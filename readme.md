@@ -60,7 +60,7 @@ Watch our demo video to witness the magic of Freeiva: [Demo Video](https://youtu
 
 ## Documentation
 
-Explore our detailed documentation to unravel the secrets of the project: [Documentation](link-to-your-documentation) 📖
+Explore our detailed documentation to unravel the secrets of the project: [Documentation](https://github.com/j-a-y-e-s-h/freeiva/tree/main/Documentation) 📖
 
 # Contributors
 
