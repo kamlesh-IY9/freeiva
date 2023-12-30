@@ -58,6 +58,11 @@ Before you embark on this exciting journey, ensure that you have the following i
 
 Watch our demo video to witness the magic of Freeiva: [Demo Video](https://youtu.be/0vVL0oJYR5w?si=a-SST0w_7_FB2iXK) 🎥
 
+
+https://github.com/j-a-y-e-s-h/freeiva/assets/75063311/853f7fc6-338d-4618-bdba-22cf685dbe99
+
+
+
 ## Documentation
 
 Explore our detailed documentation to unravel the secrets of the project: [Documentation](https://github.com/j-a-y-e-s-h/freeiva/tree/main/Documentation) 📖
