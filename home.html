@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FREEIVA</title>
+    <!-- menu Button Category -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;500&display=swap');
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(315deg, #ffffff 0%, rgba(164, 218, 252, 0.626) 75%);
+    }
+
+    .sear {
+        overflow: hidden;
+        float: right;
+        padding: 0.4%;
+        width: 335px;
+        height: 4%;
+        background-color: #fff;
+        margin-top: 0.6%;
+        margin-right: 38.3%;
+        font-size: 55%;
+        border: 100%;
+        cursor: text;
+        font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+        border-radius: 8px;
+
+    }
+
+    .searchBut {
+        float: right;
+        padding: 0.2%;
+        margin-top: 0.75%;
+        background: #fff;
+        margin-right: -345px;
+        color: #333;
+        font-size: 62.4%;
+        border: none;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 8px;
+        transform: rotate(90deg);
+
+    }
+
+    .searchBut a:link {
+        text-decoration: none;
+    }
+
+    .login {
+        float: right;
+        padding: 0.5%;
+        margin-top: 0.25%;
+        margin-right: -55.15%;
+        background-color: #0A91E7;
+        background: #0A91E7;
+        font-size: 80%;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 0.1ch;
+    }
+
+    .login a:link {
+        color: #ffffff;
+        font-family: 'Josefin Sans', sans-serif;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #0A91E7;
+    }
+
+    .login a:active {
+        font-family: 'Josefin Sans', sans-serif;
+        color: blue;
+    }
+
+    .login a:visited {
+        font-family: 'Josefin Sans', sans-serif;
+        color: wheat;
+    }
+
+    .login a:hover {
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgb(0, 250, 254);
+    }
+
+    .wallet {
+        float: right;
+        margin-top: -1%;
+        margin-right: -60.8%;
+        border: none;
+        cursor: pointer;
+        width: 5%;
+        height: 5%;
+    }
+
+    .name {
+        font-family: "Lato", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 0.2ch;
+        margin-left: 3.4%;
+        color: #DFF6FF;
+        text-decoration: none;
+    }
+
+    .name a:link {
+        text-decoration: none;
+        color: white;
+    }
+
+    .name a:active {
+        color: white;
+    }
+
+    .name a:visited {
+        color: white;
+    }
+
+    .name a:hover {
+        color: rgb(226, 237, 237);
+    }
+
+    .d1 {
+        padding: 0.3%;
+        background-color: #0A91E7;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    .line {
+        font-size: 37px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .line a:link {
+        color: white;
+    }
+
+    /*Slide show start for Banner*/
+    .mySlides {
+        display: none;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 99.7%;
+        position: relative;
+        margin: auto;
+        margin-top: 1.3%;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 11px
+        }
+    }
+
+    @font-face {
+        font-family: 'Signika', sans-serif;
+        src: url(fonts/Signika-VariableFont_wght.ttf) format('ttf');
+    }
+
+    /*Menu Bar Start*/
+
+    .menu {
+        box-shadow: 0 5px 10px #00000040;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 5px;
+        font-size: 130%;
+        border-radius: 7px;
+    }
+
+    li {
+        float: left;
+        height: 100%;
+        width: 20%;
+        background-color: #fff;
+        left: 0;
+        top: 0;
+        position: relative;
+
+    }
+
+    li a {
+        display: block;
+        color: #3d8eda;
+        text-align: center;
+        text-decoration: none;
+        height: 100%;
+        line-height: 60px;
+        font-size: 19px;
+        font-weight: 400;
+        margin: 1 10px;
+        cursor: pointer;
+        z-index: 1;
+        border-radius: 5px;
+
+    }
+
+    li a:hover {
+        background: #4449ad;
+        color: white;
+        border-radius: 5px;
+        height: max-content;
+    }
+
+    /*Categories*/
+    .Shadow {
+        filter: drop-shadow(5px 5px 5px black);
+    }
+
+    .c_list {
+        font-size: 160%;
+        font-family: monospace;
+    }
+
+    /*-------------------------------------------------------------------------------------------------------*/
+    /*PRODUCTS START*/
+    /*-------------------------------------------------------------------------------------------------------*/
+
+    ._1_slider {
+        height: 575px;
+    }
+
+    ._2_slider {
+        height: 575px;
+    }
+
+    ._3_slider {
+        height: 575px;
+    }
+
+    ._4_slider {
+        height: 575px;
+    }
+
+    ._5_slider {
+        height: 575px;
+    }
+
+    /* PRODUCTS */
+    .product {
+        position: relative;
+        overflow: hidden;
+        padding: 1% 4%;
+        scroll-behavior: smooth;
+    }
+
+    .tranding {
+        font-size: 40px;
+        font-family: fantasy;
+        padding-left: 32px;
+    }
+
+    .product-container {
+        scroll-behavior: smooth;
+        display: flex;
+        padding: 0 9px 0;
+        height: 500px;
+        overflow-x: auto;
+        overflow-Y: hidden;
+    }
+
+    .product-container::-webkit-scrollbar {
+        scroll-behavior: smooth;
+        display: none;
+    }
+
+    .product-card {
+        flex: 0 0 auto;
+        width: 293px;
+        height: 82%;
+        background-color: #ffffff;
+        margin: 3% 1.8% 0;
+        border-radius: 17px;
+        transition: .6s;
+        border: 1px solid rgb(175, 175, 175);
+        filter: drop-shadow(3px 3px 9px #616161);
+    }
+
+    .product-card:hover {
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.16), 0 2px 20px rgba(0, 0, 0, 0.23);
+        transform: scale(1.05);
+    }
+
+    .product-image {
+        position: relative;
+        width: 100%;
+        height: 65%;
+        overflow: hidden;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+
+    .product-thumb {
+        height: 94%;
+        width: 100%;
+        padding: 14px 0;
+        position: relative;
+        object-fit: scale-down;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+
+    .star {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 1% 0% 0.5%;
+    }
+
+    .star img {
+        width: 63%;
+        margin-top: -6%;
+    }
+
+    .product-card:hover .card-btn {
+        opacity: 1;
+        background: rgb(11, 248, 252);
+    }
+
+    .product-info {
+        width: 100%;
+        height: 90%;
+
+    }
+
+    .product-short-description {
+        width: 100%;
+        height: 9%;
+        font-weight: normal;
+        font-size: large;
+        line-height: 100%;
+        opacity: 0.7;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .price {
+        font-weight: 1000;
+        font-size: 160%;
+        margin-left: 60px;
+    }
+
+    .actual-price {
+        opacity: 0.8;
+        font-size: 120%;
+        margin-left: 60px;
+        text-decoration: line-through;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+        border: none;
+        width: 6.8%;
+        height: 35%;
+        position: absolute;
+        margin: 12% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .pre-btn {
+        left: 0;
+        transform: rotate(180deg);
+    }
+
+    .nxt-btn {
+        right: 0;
+        opacity: 0.6;
+
+    }
+
+    .pre-btn img,
+    .nxt-btn img {
+        opacity: 0.2;
+    }
+
+    .pre-btn:hover img,
+    .nxt-btn:hover img {
+        opacity: 1;
+    }
+
+    .rml a:visited{
+        text-decoration: none;
+        color: black;
+    }
+    .rml a:hover{
+        color: black;
+        text-decoration: none;
+    }
+    .rml a:link{
+        color: black;
+        text-decoration: none;
+    }
+    .rml a:active{
+        color: black;
+        text-decoration: none;
+    }
+    
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
+
+    /*p_list*/
+    .p_list {
+        width: 90%;
+        align-items: center;
+        margin-top: 5%;
+        justify-content: center;
+    }
+
+    .caNM {
+        font-size: 145%;
+        font-family: 'Signika', sans-serif;
+        font-family: 'Signika', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+
+<body>
+
+    <div class="d1">
+        <h1 align="left" class="name" style="color: #DFF6FF;">
+            <span class=" line"></span> <a href="#"> FREEIVA </a>
+            <input class="sear" type="text" placeholder="Search...">
+            <button class="searchBut" type="submit"> <a href="#"><img src="img/search.png" alt=""></a></button>
+            <a href="login and Register.html" class="login">Login</a>
+            <a href="#"><img class="wallet" src="img/w1.gif" alt="WALLET""></a>
+        </h1>
+    </div>
+
+
+    <!-- Menu Bar Start -->
+
+    <div class=" menu">
+                <ul>
+                    <li class="me1"><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="me1"><a href="#"><i class="fas fa-shopping-bag"></i> Categories</a></li>
+                    <li class="me1"><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                    <li class="me1"><a href="about.html"><i class="fas fa-envelope"></i> Contect Us</a></li>
+                    <li class="me1"><a href="about.html"><i class="fas fa-phone"></i> About us</a></li>
+                </ul>
+    </div>
+
+    <!-- slider -->
+    <div class=" slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="img\banner1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img\banner2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img\banner3.jpg" style="width:100%">
+        </div>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <br><br><br>
+
+    <!-- Categories -->
+    <div class="p_list">
+        <a href="Electronics.html"><img class="mar" style=" margin-top:-3.5%; position: absolute; left: 1.5%;width:12%"
+                src="img\electronics.png"></a>
+        <a href="jewellery.html"><img class="mar" style="position: absolute; margin-top: -4%; left: 15.5%;width:10%"
+                src="img\jewellery.png"></a>
+        <a href="Fashion.html"><img class="mar" style="position: absolute; margin-top:-5.1%; left: 28.2%;width:3.5%"
+                src="img\fashion.png"></a>
+        <a href="Books.html"><img class="mar" style="position: absolute;margin-top:-2.2%; left: 35.5%;width:10%"
+                src="img\book.png"></a>
+        <a href="Home Funnishings.html"><img class="mar"
+                style="position: absolute; margin-top:-3.5%;left: 48.5%;width:6.3%" src="img\home farnichar.png"></a>
+        <a href="Game.html"><img class="mar" style="position: absolute;margin-top:-4.2%; left: 59%;width:6%"
+                src="img\games.png"></a>
+        <a href="Sport.html"><img class="mar" style="position: absolute; margin-top:-1%;left: 68%;width:10%"
+                src="img\sports.png"></a>
+        <a href="Toys.html"><img class="mar" style="position: absolute; margin-top:-4%;left: 79%;width:14%"
+                src="img\toys.png"></a>
+        <a href="#"><img class="mar" style="position: absolute; margin-top:-2%;left: 94%;width:4%"
+                src="img\more.png"></a>
+    </div>
+    <div>
+        <br><br><br><br>
+
+        <div class="caNM" style="position:absolute; margin-left: 2.8%; ">Electronics</div>
+        <div class="caNM" style="position:absolute; margin-left: 16.6%;">jewellery</div>
+        <div class="caNM" style="position:absolute; margin-left: 26.5%; "> Fashion</div>
+        <div class="caNM" style="position:absolute; margin-left: 37.5%; ">Books</div>
+        <div class="caNM" style="position:absolute; margin-left: 45.6%;">home furnichar</div>
+        <div class="caNM" style="position:absolute; margin-left: 59.02%; ">Games</div>
+        <div class="caNM" style="position:absolute; margin-left: 69.8%; ">Sports</div>
+        <div class="caNM" style="position:absolute; margin-left: 83.5%; ">Toys</div>
+        <div class="caNM" style="position:absolute; margin-left: 93.86%; ">More</div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <!-- --------------------------------------------------------------- -->
+    <!-- Product Start -->
+    <!-- --------------------------------------------------------------- -->
+<div class="rml">
+
+    <div class="_1_slider">
+        <!-- 1. Slider -->
+        <div class="product">
+            <button class="pre-btn"><img src="images/arrow.png"></button>
+            <button class="nxt-btn"><img src="images/arrow.png"></button>
+            <div class="tranding">
+                Tranding
+            </div>
+            <div class="product-container">
+                <a class="p-2" href="Product-2.html">
+                    <div class="product-card" style="border:none">
+                        <a href="Product-2.html">
+
+                            <div class="product-image">
+                                <img style="height: 90% ; margin-top: 8%; " src="images/Domestic_girlfriend.png"
+                                    class="product-thumb">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-short-description">Domestic girlfriend Manga<br>Vol. 1-28</p>
+                                <div class="star">
+                                    <img src="images/5 star.png">
+                                </div>
+                                <span class="price">$129</span><span class="actual-price">$136</span>
+                            </div>
+                    </div>
+                </a>
+
+                <div class="product-card" style="border: none;">
+                    <a class="p-2" href="Product-3.html">
+
+                        <div class="product-image">
+                            <img src="images/Product-15.png" class="product-thumb">
+
+                        </div>
+                        <div class="product-info">
+                            <p class="product-short-description">Apple iPad Pro</p>
+                            <div class="star">
+                                <img src="images/0 star.png">
+                            </div>
+                            <span class="price">$600</span><span class="actual-price">$650</span>
+
+                        </div>
+                </div>
+                </a>
+                <div class="product-card">
+                <a class="p-2" href="Product-4.html">
+                    <div class="product-image">
+                        <img style="height: 110% ;" src="images/Product-22.png" class="product-thumb" style="zoom:1.5;">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Noise Colorfit Pro 4</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$125</span><span class="actual-price">$140</span>
+                    </div>
+                </div>
+            </a>
+                <div class="product-card">
+                <a class="p-2" href="Product-5.html">
+                    <div class="product-image">
+                        <img src="images/4.jpg" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Sony Play Station</p>
+                        <div class="star">
+                            <img src="images/2 star.png">
+                        </div>
+                        <span class="price">$299</span><span class="actual-price">$310</span>
+                    </div>
+                </div>
+            </a>
+                <div class="product-card">
+                <a class="p-2" href="Product-6.html">
+                    <div class="product-image">
+                        <img src="images/5.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Canon DSLR</p>
+                        <div class="star">
+                            <img src="images/0 star.png">
+                        </div>
+                        <span class="price">$315</span><span class="actual-price">$360</span>
+                    </div>
+                </div>
+            </a>
+
+                <div class="product-card">
+                <a class="p-2" href="Product-7.html">
+                    <div class="product-image">
+                        <img src="images/6.jpg" class="product-thumb" ">
+                </div>
+                <div class=" product-info">
+                        <p class="product-short-description">Bose Speaker</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$99</span><span class="actual-price">$109</span>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="_2_slider">
+        <!-- 2. Slider -->
+        <div class="product">
+            <button class="pre-btn"><img src="images/arrow.png"></button>
+            <button class="nxt-btn"><img src="images/arrow.png"></button>
+            <div class="tranding">
+                Electronics
+            </div>
+            <div class="product-container">
+                <div class="product-card" style="border:none">
+                    <div class="product-image">
+                        <img src="images/Product-14.png" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">LG Fully Automatic Washing Machine</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$129</span><span class="actual-price">$136</span>
+                    </div>
+                </div>
+
+                <div class="product-card" style="border: none;">
+                    <div class="product-image">
+                        <img style="height: 100% ;" src="images/Product-9.png" class="product-thumb">
+
+                    </div>
+                    <div class="product-info">
+                <a class="p-2" href="Product-8.html">
+                        <p class="product-short-description">OnePlus Y Series Smart<br> Android TV</p>
+                        <div class="star">
+                            <img src="images/0 star.png">
+                        </div>
+                        <span class="price">$600</span><span class="actual-price">$650</span>
+                    </div>
+                </div>
+            </a>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img style="width: 90%; margin-left: 6%;" src="images/Product-13.png" class="product-thumb"
+                            style="zoom:1.5;">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Asus ROG Strix SCAR 17 SE Intel Core i9 12th Gen</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$299</span><span class="actual-price">$330</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/5.jpg" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Sony Play Station</p>
+                        <div class="star">
+                            <img src="images/2 star.png">
+                        </div>
+                        <span class="price">$299</span><span class="actual-price">$310</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/4.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Canon DSLR</p>
+                        <div class="star">
+                            <img src="images/0 star.png">
+                        </div>
+                        <span class="price">$315</span><span class="actual-price">$360</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/6.jpg" class="product-thumb" ">
+                </div>
+                <div class=" product-info">
+                        <p class="product-short-description">Bose Speaker</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$99</span><span class="actual-price">$109</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="_3_slider">
+        <!-- 3. Slider -->
+        <div class="product">
+            <button class="pre-btn"><img src="images/arrow.png"></button>
+            <button class="nxt-btn"><img src="images/arrow.png"></button>
+            <div class="tranding">
+                Game
+            </div>
+            <div class="product-container">
+
+
+                <div class="product-card">
+                <a class="p-2" href="Product-9.html">
+                    <div class="product-image">
+                        <img src="img\games.png" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Gta San Andreas</p>
+                        <div class="star">
+                            <img src="images/0 star.png">
+                        </div>
+                        <span class="price">$315</span><span class="actual-price">$360</span>
+                    </div>
+                </div>
+            </a>
+
+                <div class="product-card" style="border:none">
+                    <div class="product-image">
+                        <img src="images/Product-23.png" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">PS4 & PS5 Remote With MET<br> Black Color</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$129</span><span class="actual-price">$136</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Metro Redux.png" class="product-thumb" ">
+                </div>
+                <div class=" product-info">
+                        <p class="product-short-description">Metro Redux Ps4</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$99</span><span class="actual-price">$109</span>
+                    </div>
+                </div>
+
+                <div class="product-card" style="border: none;">
+                    <div class="product-image">
+                        <img src="images/Product-19.png" class="product-thumb">
+
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Logitech G29 Driving Force Controller</p>
+                        <div class="star">
+                            <img src="images/0 star.png">
+                        </div>
+                        <span class="price">$600</span><span class="actual-price">$650</span>
+
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Product-18.png" class="product-thumb" style="zoom:1.5;">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Sony Playstation 5 825GB SSD</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$299</span><span class="actual-price">$330</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/4.jpg" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Sony Play Station</p>
+                        <div class="star">
+                            <img src="images/2 star.png">
+                        </div>
+                        <span class="price">$299</span><span class="actual-price">$310</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="_4_slider">
+        <!-- 3. Slider -->
+        <div class="product">
+            <button class="pre-btn"><img src="images/arrow.png"></button>
+            <button class="nxt-btn"><img src="images/arrow.png"></button>
+            <div class="tranding">
+                Sport
+            </div>
+            <div class="product-container">
+                <div class="product-card" style="border:none">
+                    <div class="product-image">
+                        <img src="images/Product-52.jpg" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">AURION Weight Dumbbell Set</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$129</span><span class="actual-price">$136</span>
+                    </div>
+                </div>
+
+                <div class="product-card" style="border: none;">
+                    <div class="product-image">
+                        <img src="images/Product-54.jpg" class="product-thumb">
+
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">The Flexbike </p>
+                        <div class="star">
+                            <img src="images/0 star.png">
+                        </div>
+                        <span class="price">$600</span><span class="actual-price">$650</span>
+
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Product-56.jpg" class="product-thumb" style="zoom:1.5;">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Plastic Cricket Set</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$299</span><span class="actual-price">$330</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                <a class="p-2" href="Product-10.html">
+                    <div class="product-image">
+                        <img src="Images/Product-50.jpg" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Carboon Force 2000 Blue <br> Grey Strung Badminton Racquet
+                        </p>
+                        <div class="star">
+                            <img src="images/2 star.png">
+                        </div>
+                        <span class="price">$299</span><span class="actual-price">$310</span>
+                    </div>
+                </div>
+            </a>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Product-53.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description"> Muscle Develope Finger Exercise Hand Grip</p>
+                        <div class="star">
+                            <img src="images/0 star.png">
+                        </div>
+                        <span class="price">$315</span><span class="actual-price">$360</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Product-55.jpg" class="product-thumb" ">
+                </div>
+                <div class=" product-info">
+                        <p class="product-short-description">Aurion Cricket Kit <br> Equipment Bag With 2 Bat </p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$99</span><span class="actual-price">$109</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="_5_slider">
+        <!-- 3. Slider -->
+        <div class="product">
+            <button class="pre-btn"><img src="images/arrow.png"></button>
+            <button class="nxt-btn"><img src="images/arrow.png"></button>
+            <div class="tranding">
+                Anime
+            </div>
+            <div class="product-container">
+                <div class="product-card" style="border:none">
+                    <div class="product-image">
+                        <img style="height: 90% ; margin-top: 5%;" src="images/Domestic_girlfriend.png"
+                            class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Domestic girlfriend Manga<br>Vol. 1-28</p>
+                        <div class="star">
+                            <img src="images/5 star.png">
+                        </div>
+                        <span class="price">$129</span><span class="actual-price">$136</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img style="height: 100% ;" src="Images/One Piece.png" class="product-thumb">
+                    </div>
+                    <div class=" product-info">
+                        <p class="product-short-description">One Piece Box Set, Vol. 1</p>
+                        <div class="star">
+                            <img src="images/4.5 star.png">
+                        </div>
+                        <span class="price">$185</span><span class="actual-price">$299</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/deathnote.png" class="product-thumb">
+                    </div>
+                    <div class=" product-info">
+                        <p class="product-short-description">Death Note Dvd Box</p>
+                        <div class="star">
+                            <img src="images/5 star.png">
+                        </div>
+                        <span class="price">$114</span><span class="actual-price">$199</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img style="height: 90% ; width: 110%;" src="images/All Anime.jpg" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description"> Anime Hoodie</p>
+                        <div class="star">
+                            <img src="images/4.5 star.png">
+                        </div>
+                        <span class="price">$59</span><span class="actual-price">$69</span>
+                    </div>
+                </div>
+
+                <div class="product-card" style="border: none;">
+                    <div class="product-image">
+                        <img src="images/DS.jpg" class="product-thumb">
+
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Demons Slayer Action Figure</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$179</span><span class="actual-price">$190</span>
+
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img style="height: 95.5% ; " src="images/Gojo.jpg" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Gojo Satoru Action Figure</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$39</span><span class="actual-price">$47</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Product-63.jpg" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Chainsaw Man Action Figure</p>
+                        <div class="star">
+                            <img src="images/3 star.png">
+                        </div>
+                        <span class="price">$463</span><span class="actual-price">$478</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/One Piece toy.png" class="product-thumb">
+                    </div>
+                    <div class=" product-info">
+                        <p class="product-short-description">One Piece Action Figure</p>
+                        <div class="star">
+                            <img src="images/5 star.png">
+                        </div>
+                        <span class="price">$114</span><span class="actual-price">$199</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+
+    <script>
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+
+        /*Product Start*/
+
+        const productContainers = [...document.querySelectorAll('.product-container')];
+        const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+        const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+        productContainers.forEach((item, i) => {
+            let containerDimensions = item.getBoundingClientRect();
+            let containerWidth = containerDimensions.width;
+
+            nxtBtn[i].addEventListener('click', () => {
+                item.scrollLeft += containerWidth;
+            })
+
+            preBtn[i].addEventListener('click', () => {
+                item.scrollLeft -= containerWidth;
+            })
+        })
+
+    </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- Footer -->
+<footer style="background-color: #1a1a1a; color: #fff; padding: 30px 0; text-align: center;">
+    <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 0 auto; flex-wrap: wrap;">
+        <div style="flex: 1 1 300px; margin-right: 20px;">
+            <h3 style="font-size: 24px; margin-bottom: 20px;">Stay Connected</h3>
+            <p style="font-size: 16px; margin: 0;">Follow us on social media for the latest updates</p>
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <a href="#" style="margin-right: 20px; color: #4CAF50; text-decoration: none; font-size: 20px;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="margin-right: 20px; color: #1DA1F2; text-decoration: none; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color: #DD2A7B; text-decoration: none; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div style="flex: 1 1 300px;">
+            <h3 style="font-size: 24px; margin-bottom: 20px;">Contact Us</h3>
+            <p style="font-size: 16px; margin: 0;">Email: info@example.com</p>
+            <p style="font-size: 16px; margin: 0;">Phone: +91 123 456 7890</p>
+        </div>
+    </div>
+    <hr style="border: 1px solid #555; margin: 30px 0;">
+    <p style="font-size: 16px; margin: 0;">&copy; 2021 FREEIVA. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
