@@ -73,7 +73,7 @@ The Freeiva project is made possible by contributions from amazing individuals. 
 
 - [Jayesh](https://github.com/j-a-y-e-s-h)
 - [Yash](https://github.com/YashPatil2023/)
-- [Kamlesh](https://github.com/K-a-r-a-n-m-i-k-e-y)
+- [Kamlesh](https://github.com/kamlesh-IY9)
 
 Feel free to join our vibrant community and contribute to the project! 🚀
 
