@@ -85,3 +85,17 @@ Feel free to join our vibrant community and contribute to the project! 🚀
 Now you are all set! Feel free to explore your project at the provided localhost URL.
 
 🚀 Happy coding! If you encounter any issues, double-check your configurations and ensure each step is followed accurately.
+
+<p align="center"> 
+  <a href="https://html.com"><img src="https://img.shields.io/badge/Language-HTML-orange?style=for-the-badge" alt="HTML"></a>
+  <a href="https://www.w3.org/Style/CSS/Overview.en.html"><img src="https://img.shields.io/badge/Language-CSS-blue?style=for-the-badge" alt="CSS"></a>
+  <a href="https://www.javascript.com/"><img src="https://img.shields.io/badge/Language-JavaScript-yellow?style=for-the-badge" alt="JavaScript"></a>
+  <a href="https://www.php.net/"><img src="https://img.shields.io/badge/Language-PHP-purple?style=for-the-badge" alt="PHP"></a>
+  <br> 
+  <img src="https://img.shields.io/github/contributors/j-a-y-e-s-h/freeiva?style=for-the-badge" alt="Contributors"> 
+  <img src="https://img.shields.io/github/repo-size/j-a-y-e-s-h/freeiva?style=for-the-badge" alt="Repository Size"> <br> 
+  <img src="https://img.shields.io/github/watchers/j-a-y-e-s-h/freeiva?style=for-the-badge" alt="Watchers"> 
+  <img src="https://img.shields.io/github/commit-activity/w/j-a-y-e-s-h/freeiva?style=for-the-badge" alt="Commit Activity"> 
+  <img src="https://img.shields.io/github/issues/j-a-y-e-s-h/freeiva?style=for-the-badge" alt="Issues"> 
+</p>
+
