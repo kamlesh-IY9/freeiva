@@ -26,7 +26,7 @@ Before you embark on this exciting journey, ensure that you have the following i
    - Open a terminal and run the following command to clone the repository:
 
      ```bash
-     git clone https://github.com/j-a-y-e-s-h/freeiva.git
+     git clone https://github.com/kamlesh-IY9/freeiva.git
      ```
 3. **Start Servers:**
 
